@@ -1,0 +1,38 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="base" template="/WEB-INF/pages/tiles/layout.jsp">
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp"/>
+        <put-attribute name="topMenu" value="/WEB-INF/pages/tiles/topMenu.jsp"/>
+        <put-attribute name="subMenu" value=""/>
+        <put-attribute name="botMenu" value=""/>
+        <put-attribute name="selected" value="default" />
+    </definition>
+
+    <definition name="404error" extends="base">
+        <put-attribute name="content" value="/WEB-INF/pages/errors/404error.jsp" />
+    </definition>
+
+    <definition name="500error" extends="base">
+        <put-attribute name="content" value="/WEB-INF/pages/errors/500error.jsp" />
+    </definition>
+
+    <definition name="index" extends="base">
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+        <put-attribute name="selected" value="index" />
+    </definition>
+
+    <definition name="login" extends="base">
+        <put-attribute name="content" value="/WEB-INF/pages/login.jsp" />
+    </definition>
+
+    <definition name="short.*" extends="base">
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+    </definition>
+
+    <definition name="*.*" extends="base">
+        <put-attribute name="content" value="/WEB-INF/pages/{1}/{2}.jsp" />
+        <put-attribute name="selected" value="{1}.{2}" />
+    </definition>
+
+</tiles-definitions>

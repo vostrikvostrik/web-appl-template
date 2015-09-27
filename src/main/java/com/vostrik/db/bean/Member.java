@@ -1,0 +1,71 @@
+package com.vostrik.db.bean;
+
+import javax.persistence.*;
+
+/**
+ * User: EVostrikova
+ * Date: 29.08.15
+ * Time: 22:44
+ */
+
+@Entity
+@Table(name="VOSTRIK_MEMBER")
+public class Member {
+
+        @Id
+        @Column(name = "MEMBER_ID")
+        @GeneratedValue
+        private Long memberId;
+
+        @Column(name = "MEMBER_NAME")
+        private String memberName;
+
+        @Column(name = "MEMBER_LOGIN")
+        private Integer memberLogin;
+
+        @Column(name = "MEMBER_PASSWORD")
+        private String memberPassword;
+
+        @Column(name = "MEMBER_EMAIL")
+        private String memberEmail;
+
+        public Long getMemberId() {
+            return memberId;
+        }
+
+        public void setMemberId(Long memberId) {
+            this.memberId = memberId;
+        }
+
+        public String getMemberName() {
+            return memberName;
+        }
+
+        public void setMemberName(String memberName) {
+            this.memberName = memberName;
+        }
+
+        public Integer getMemberLogin() {
+            return memberLogin;
+        }
+
+        public void setMemberLogin(Integer memberLogin) {
+            this.memberLogin = memberLogin;
+        }
+
+        public String getMemberPassword() {
+            return memberPassword;
+        }
+
+        public void setMemberPassword(String memberPassword) {
+            this.memberPassword = memberPassword;
+        }
+
+        public String getMemberEmail() {
+            return memberEmail;
+        }
+
+        public void setMemberEmail(String memberEmail) {
+            this.memberEmail = memberEmail;
+        }
+}
