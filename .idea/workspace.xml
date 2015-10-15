@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14f491f4-bc3d-45ed-9527-085bb393a8c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vostrik/db/bean/MemberNote.java" afterPath="$PROJECT_DIR$/src/main/java/com/vostrik/db/bean/MemberNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vostrik/db/bean/ShortLinkBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/vostrik/db/bean/ShortLinkBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-appl-template.iml" afterPath="$PROJECT_DIR$/web-appl-template.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="14f491f4-bc3d-45ed-9527-085bb393a8c3" name="Default" comment="" />
     <ignored path="web-appl-template.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="14f491f4-bc3d-45ed-9527-085bb393a8c3" time="1440688174800" ignored="false" />
@@ -54,7 +44,7 @@
     <file path="$PROJECT_DIR$/../testVkApi/src/main/webapp/WEB-INF/pages/hello.jsp" changelist="14f491f4-bc3d-45ed-9527-085bb393a8c3" time="1443604871612" ignored="false" />
     <file path="/security.xml" changelist="14f491f4-bc3d-45ed-9527-085bb393a8c3" time="1444408381907" ignored="false" />
     <file path="C:/JavaProjects/getSite/.idea/workspace.xml" changelist="14f491f4-bc3d-45ed-9527-085bb393a8c3" time="1444808272956" ignored="false" />
-    <file path="$PROJECT_DIR$/../web-app-templ-master/.idea/workspace.xml" changelist="14f491f4-bc3d-45ed-9527-085bb393a8c3" time="1444924834690" ignored="false" />
+    <file path="$PROJECT_DIR$/../web-app-templ-master/.idea/workspace.xml" changelist="14f491f4-bc3d-45ed-9527-085bb393a8c3" time="1444925199643" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
