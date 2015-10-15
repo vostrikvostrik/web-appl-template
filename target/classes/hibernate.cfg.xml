@@ -5,7 +5,9 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<mapping class="ru.alex.users.db.bean.User" />
-		<mapping class="ru.alex.users.db.bean.ShortLinkBean" />
+		<mapping class="com.vostrik.db.bean.User" />
+		<mapping class="com.vostrik.db.bean.ShortLinkBean" />
+        <mapping class="com.vostrik.db.bean.Member" />
+        <mapping class="com.vostrik.db.bean.MemberNote" />
 	</session-factory>
 </hibernate-configuration>

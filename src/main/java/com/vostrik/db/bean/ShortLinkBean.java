@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 
 @Entity
-//@Table(name="OAS_SHORT_LINKS")
+@Table(name="VOSTRIK_SHORT_LINKS")
 public class ShortLinkBean {
 
     @Id

@@ -16,18 +16,12 @@ public class MemberNote {
     @GeneratedValue
     private Long noteId;
 
-    @Id
     @Column(name = "NOTE_TEXT")
-    @GeneratedValue
     private Long noteText;
 
-    @Id
     @Column(name = "NOTE_DATE")
-    @GeneratedValue
     private Long noteDate;
 
-    @Id
     @Column(name = "NOTE_MEMBER_ID")
-    @GeneratedValue
     private Long noteMemberId;
 }
