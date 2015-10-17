@@ -35,4 +35,9 @@ public class UserServiceImpl implements UserService {
         return baseDao.getLinksList();
     }
 
+    @Override
+    public User getUserByUserName(String userName) {
+        return baseDao.getUserByLogin(userName);
+    }
+
 }

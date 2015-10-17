@@ -1,6 +1,9 @@
 package com.vostrik.db.dao;
 
 
+import com.vostrik.db.bean.MemberNote;
+import com.vostrik.db.bean.User;
+
 import java.util.List;
 import java.util.Map;
 
@@ -18,4 +21,7 @@ public interface BaseDao {
 
     List<Map<String, Object>> getNotesList ();
 
+    List<MemberNote> getNotesListAsObject();
+
+    User getUserByLogin(String userName);
 }

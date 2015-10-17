@@ -1,5 +1,6 @@
 package com.vostrik.service.impl;
 
+import com.vostrik.db.bean.MemberNote;
 import com.vostrik.db.dao.BaseDao;
 import com.vostrik.service.MemberNoteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,5 +25,11 @@ public class MemberNoteServiceImpl implements MemberNoteService {
     @Override
     public List<Map<String, Object>> getNotesList() {
         return baseDao.getNotesList();
+    }
+
+    @Transactional
+    @Override
+    public List<MemberNote> getNotesListAsObject() {
+        return baseDao.getNotesListAsObject();
     }
 }

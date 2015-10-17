@@ -14,13 +14,13 @@
 
 <div class="container">
     <div class="form-group">
-        <label for="long">Enter long link</label>
-        <input class="form-control" id="long" type="text">
+        <label for="noteText">Enter note</label>
+        <input class="form-control" id="noteText" type="text">
         <button type="button" class="btn btn-default" onclick="callGenerator()">Generate</button>
     </div>
     <div class="form-group">
-        <label for="short">Short</label>
-        <input class="form-control" id="short" type="text">
+        <label for="newNote">new Note</label>
+        <input class="form-control" id="newNote" type="text">
     </div>
     <div class="form-group">
         <label for="link">Try it:</label>
@@ -28,20 +28,21 @@
     </div>
 </div>
 <div class="container">
+
     <table class="table">
         <thead>
         <tr>
-            <th>generated short url</th>
-            <th>long url</th>
-            <th>inner link</th>
+            <th>note text</th>
+            <th>note date</th>
+            <th>note user</th>
         </tr>
         </thead>
         <tbody>
         <c:forEach items="${tableList}" var="item" >
             <tr>
-                <td>${item.shortUrl}</td>
-                <td><a href="${item.longUrl}">${item.longUrl}</a></td>
-                <td><%=request.getContextPath()%>/short/${item.shortUrl}</td>
+                <td>${item.noteText}</td>
+                <td><a href="${item.noteDate}">${item.noteDate}</a></td>
+                <td><%=request.getContextPath()%>${item.noteMemberId}</td>
             </tr>
         </c:forEach>
         </tbody>
@@ -54,11 +55,11 @@
             type: 'POST',
             url: 'generate',
             async:  true,
-            data:   {'url': $('#long').val()},
+            data:   {'noteText': $('#noteText').val()},
             datatype: 'json',
             traditional: true,
             success: function(data) {
-                $('#short').val(data);
+                $('#newNote').val(data);
                 $('#link').empty();
                 $('#link').append("<a href='<%=request.getContextPath() %>"+data+"'>"+data+"</a>")
             }

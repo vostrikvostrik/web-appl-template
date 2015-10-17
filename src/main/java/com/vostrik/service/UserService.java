@@ -1,5 +1,7 @@
 package com.vostrik.service;
 
+import com.vostrik.db.bean.User;
+
 import java.util.List;
 import java.util.Map;
 
@@ -13,4 +15,6 @@ public interface UserService {
     String getLongUrl(String shortUrl);
 
     List<Map<String, Object>> getLinksList();
+
+    User getUserByUserName(String userName);
 }

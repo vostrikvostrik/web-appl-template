@@ -21,7 +21,7 @@ public class Member {
         private String memberName;
 
         @Column(name = "MEMBER_LOGIN")
-        private Integer memberLogin;
+        private String memberLogin;
 
         @Column(name = "MEMBER_PASSWORD")
         private String memberPassword;
@@ -45,11 +45,11 @@ public class Member {
             this.memberName = memberName;
         }
 
-        public Integer getMemberLogin() {
+        public String getMemberLogin() {
             return memberLogin;
         }
 
-        public void setMemberLogin(Integer memberLogin) {
+        public void setMemberLogin(String memberLogin) {
             this.memberLogin = memberLogin;
         }
 
