@@ -59,6 +59,8 @@
             datatype: 'json',
             traditional: true,
             success: function(data) {
+                //alert("Успешное выполнение");
+                //alert("data=" + data);
                 $('#newNote').val(data);
                 $('#link').empty();
                 $('#link').append("<a href='<%=request.getContextPath() %>"+data+"'>"+data+"</a>")

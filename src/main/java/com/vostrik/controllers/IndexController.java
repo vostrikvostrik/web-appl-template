@@ -40,7 +40,7 @@ public class IndexController {
     @RequestMapping(value = "/generate", method = RequestMethod.POST)
     @ResponseBody
     public String generateShort(@RequestParam(value = "noteText") String noteText, HttpServletRequest request, ModelMap model) throws IOException {
-        return (request.getContextPath() +"/"+ userService.generateShortUrl(noteText));
+        return /*(request.getContextPath() +"/"+ userService.generateShortUrl(noteText))*/"noteText = " + noteText;
     }
 
     @RequestMapping("/")
